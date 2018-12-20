@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Untitled Page</title>
+    <script type="text/javascript">
+        function myArray() {
+            var tmpArray = new Array();
+            tmpArray[0] = "H";
+            tmpArray[1] = "E";
+            tmpArray[2] = "L";
+            tmpArray[3] = "L";
+            tmpArray[4] = "O";
+
+          alert("This array contains " + tmpArray.length + " elements!");
+          tmpArray.length=3;
+          alert("The array elements are "+ tmpArray.toString());
+          alert("The array elements in reverse order are " + tmpArray.reverse());
+          alert(tmpArray.pop());
+          alert(tmpArray.sort());
+        }
+    </script>
+</head>
+<body>
+  <form>
+     <input type="button" value="Array Demo" onclick="myArray()" />
+  </form>
+</body>
+</html>

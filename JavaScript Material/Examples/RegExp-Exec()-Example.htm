@@ -1,0 +1,23 @@
+<script language="JavaScript">
+function checkString(){
+var pattern = /cat/;    
+var regExp = new RegExp(pattern);
+
+var results = regExp.exec("Cats and Dogs and Cats");  
+if (results != null)
+{
+alert(results.length);
+alert(results[0]);
+}
+else
+{
+   alert("The string " + "'" + pattern + "'" + " has not been found!");
+}
+
+}
+</script>
+
+<form name="myform">
+<input type="button" onClick="checkString()" value="check">
+
+</form>

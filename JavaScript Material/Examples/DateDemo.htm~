@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Untitled Page</title>
+    <script language="javascript">
+        function dateDemo() {
+	    var datearray = new Array("Sunday","Monday","tuesday","Wednesday","Thusday","Friday","Saturday" );
+	   
+            var dt = new Date();
+            alert("The current date is " + dt.getDate());
+            alert("The day is " + dt.getDay());
+            alert("The full year is " + dt.getFullYear());
+            alert("The hour is " + dt.getHours());
+            alert("The minute is " + dt.getMinutes());
+            alert("The seconds is " + dt.getSeconds());
+            alert("The time is " + dt.toTimeString());
+            alert("The GMT value is " + dt.toGMTString());
+            alert("The locale date is " + dt.toLocaleDateString());
+			
+           var indDate = new Date();
+	   indDate.setFullYear(1947,7,15);
+	   alert(datearray[indDate.getDay()]);
+        }
+        dateDemo();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
